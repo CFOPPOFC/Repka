@@ -6,7 +6,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int b;
+            Console.WriteLine("Сколько раз написать репка?");
+            string a = Console.ReadLine();
+            int.TryParse(a, out b);
+            for(int i=0;i<b;i++)
+                Console.WriteLine("репка");
         }
     }
+        
+    
 }
